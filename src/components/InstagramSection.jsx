@@ -1,16 +1,17 @@
+import { useEffect } from 'react';
 import { Instagram } from 'lucide-react';
 
-/*
-  Para activar el feed de Instagram:
-  1. Ve a https://snapwidget.com
-  2. Regístrate gratis y conecta tu cuenta @tam.psicologa
-  3. Crea un widget y copia el código del <iframe>
-  4. Reemplaza el src del <iframe> de abajo con tu URL de SnapWidget
-     (se ve así: https://snapwidget.com/embed/XXXXXXX)
-*/
-const SNAPWIDGET_URL = ''; // ← Pega aquí tu URL de SnapWidget
+const SNAPWIDGET_URL = 'https://snapwidget.com/embed/1122173';
 
 export default function InstagramSection() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://snapwidget.com/js/snapwidget.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => { document.body.removeChild(script); };
+  }, []);
+
   return (
     <section className="py-20 px-6 bg-[#F8F5F0]">
       <div className="max-w-6xl mx-auto">
@@ -34,11 +35,12 @@ export default function InstagramSection() {
         {SNAPWIDGET_URL ? (
           <iframe
             src={SNAPWIDGET_URL}
-            className="w-full border-0"
-            height="450"
-            title="Feed de Instagram @tam.psicologa"
-            scrolling="no"
+            className="snapwidget-widget w-full border-0"
             allowTransparency="true"
+            frameBorder="0"
+            scrolling="no"
+            style={{ border: 'none', overflow: 'hidden', width: '100%' }}
+            title="Posts from Instagram"
           />
         ) : (
           <div className="bg-[#EBE4D8] rounded-xl p-12 text-center">
