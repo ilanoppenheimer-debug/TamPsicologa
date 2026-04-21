@@ -43,7 +43,7 @@ export default function HeroSection() {
             Te ofrezco un espacio seguro y sin juicios, respaldado por conocimientos clínicos constantemente actualizados. Mi objetivo es que encuentres alivio, te comprendas mejor y desarrolles herramientas para una vida plena.
           </motion.p>
           <motion.div variants={fadeInUp}>
-            <a href="#contacto" className="inline-block bg-[#2A221E] text-[#F8F5F0] px-8 py-3 rounded-full font-medium hover:bg-[#A95C45] transition-colors duration-300 shadow-lg">
+            <a href="#contacto" className="inline-block bg-[#A95C45] text-[#F8F5F0] px-10 py-4 rounded-full font-semibold text-lg hover:bg-[#8B4A36] transition-colors duration-300 shadow-lg">
               Agenda una sesión
             </a>
           </motion.div>
