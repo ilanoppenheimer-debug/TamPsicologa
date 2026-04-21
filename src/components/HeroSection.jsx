@@ -34,7 +34,7 @@ export default function HeroSection() {
             Porque mereces construir una vida que te haga feliz.
           </motion.h1>
           <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#2A221E]/80 mb-6 font-light">
-            Demos juntos el primer paso.
+            Comencemos a construir esa vida hoy mismo.
           </motion.p>
           <motion.p variants={fadeInUp} className="text-base text-[#2A221E]/70 mb-10 leading-relaxed max-w-lg">
             Te ofrezco un espacio seguro y sin juicios, respaldado por conocimientos clínicos constantemente actualizados. Mi objetivo es que encuentres alivio, te comprendas mejor y desarrolles herramientas para una vida plena.
