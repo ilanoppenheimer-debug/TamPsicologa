@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import arbol from '../assets/arbol.png';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -22,9 +23,9 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[#F8F5F0]/20"></div>
         <div className="absolute inset-0 bg-[#2A221E]/10 md:hidden"></div>
       </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex items-center">
         <motion.div
-          className="bg-[#EBE4D8] p-10 md:p-16 lg:p-20 max-w-2xl shadow-2xl"
+          className="bg-[#EBE4D8] p-10 md:p-16 lg:p-20 max-w-2xl shadow-2xl relative z-10"
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
@@ -43,6 +44,21 @@ export default function HeroSection() {
               Agenda una sesión
             </a>
           </motion.div>
+        </motion.div>
+
+        {/* Árbol decorativo a la derecha del cuadro */}
+        <motion.div
+          className="hidden md:flex flex-1 justify-center items-end self-end pb-0"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+        >
+          <img
+            src={arbol}
+            alt=""
+            aria-hidden="true"
+            className="w-[420px] lg:w-[500px] xl:w-[560px] object-contain drop-shadow-lg select-none"
+          />
         </motion.div>
       </div>
     </section>
