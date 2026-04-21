@@ -36,6 +36,9 @@ export default function AboutSection() {
           <p className="text-base mb-10 leading-relaxed text-[#2A221E]/80">
             Es por esto que mi propósito es apoyar y promover un cambio que te permita formar relaciones saludables, regular tus emociones de manera efectiva y fomentar un bienestar general, utilizando herramientas basadas en evidencia.
           </p>
+          <p className="text-sm text-[#2A221E]/50 mb-8">
+            Registro Nacional de Prestadores de Salud N° 895940
+          </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <a href="#contacto" className="bg-[#596C61] text-[#F8F5F0] px-8 py-3 font-medium hover:bg-[#46554C] transition-colors duration-300 shadow-sm">
               Conversemos
