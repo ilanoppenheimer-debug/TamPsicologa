@@ -22,19 +22,19 @@ export default function AboutSection() {
           className="order-2 md:order-1"
         >
           <h2 className="font-serif text-5xl md:text-6xl mb-4 text-[#1C1613] font-bold">
-            Quien soy?
+            ¿Quién soy?
           </h2>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 text-[#A95C45] font-semibold">
             Tamar Camhi V.
           </h3>
           <p className="text-lg font-bold text-[#2A221E] mb-6">
-            Psicologa Clinica UC especializada en Terapia Conductual Dialectica (DBT).
+            Psicóloga Clínica UC especializada en Terapia Conductual Dialéctica (DBT).
           </p>
           <p className="text-base mb-6 leading-relaxed text-[#2A221E]/80">
-            Entiendo que iniciar terapia puede ser un desafio. Por lo mismo, creo que es importante encontrar un profesional que te haga sentir seguro, protegido y validado mientras te guia a traves del proceso.
+            Entiendo que iniciar terapia puede ser un desafío. Por lo mismo, creo que es importante encontrar un profesional que te haga sentir seguro, protegido y validado mientras te guía a través del proceso.
           </p>
           <p className="text-base mb-10 leading-relaxed text-[#2A221E]/80">
-            Es por esto que mi proposito es apoyar y promover un cambio que te permita formar relaciones saludables, regular tus emociones de manera efectiva y fomentar un bienestar general, utilizando herramientas basadas en evidencia.
+            Es por esto que mi propósito es apoyar y promover un cambio que te permita formar relaciones saludables, regular tus emociones de manera efectiva y fomentar un bienestar general, utilizando herramientas basadas en evidencia.
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <a href="#contacto" className="bg-[#596C61] text-[#F8F5F0] px-8 py-3 font-medium hover:bg-[#46554C] transition-colors duration-300 shadow-sm">

@@ -14,20 +14,20 @@ const staggerContainer = {
 const specialties = [
   {
     icon: Brain,
-    title: 'Regulacion Emocional',
-    description: 'Obtén herramientas practicas para tolerar el malestar, manejar emociones intensas como la ansiedad y la impulsividad, y aprender a confiar en las senales que tu mente y tu cuerpo te dan.',
+    title: 'Regulación Emocional',
+    description: 'Obtén herramientas prácticas para tolerar el malestar, manejar emociones intensas como la ansiedad y la impulsividad, y aprender a confiar en las señales que tu mente y tu cuerpo te dan.',
     border: true,
   },
   {
     icon: Leaf,
     title: 'Conducta Alimentaria',
-    description: 'Abordaje integral y libre de juicios de los Trastornos de la Conducta Alimentaria (TCA). Aprende a reconstruir sanamente la relacion con tu cuerpo, tu alimentacion y tu propia historia.',
+    description: 'Abordaje integral y libre de juicios de los Trastornos de la Conducta Alimentaria (TCA). Aprende a reconstruir sanamente la relación con tu cuerpo, tu alimentación y tu propia historia.',
     border: true,
   },
   {
     icon: HeartHandshake,
-    title: 'Crisis y Vinculos',
-    description: 'Proporciono un entorno seguro que permite abordar traumas, atravesar procesos de duelo y etapas dificiles y desarrollar metodos de comunicacion efectivos para mejorar tus relaciones interpersonales.',
+    title: 'Crisis y Vínculos',
+    description: 'Proporciono un entorno seguro que permite abordar traumas, atravesar procesos de duelo y etapas difíciles y desarrollar métodos de comunicación efectivos para mejorar tus relaciones interpersonales.',
     border: false,
   },
 ];
@@ -55,7 +55,7 @@ export default function SpecialtiesSection() {
               <div className="mb-6 text-[#2A221E]"><Icon size={80} strokeWidth={1} /></div>
               <h3 className="font-serif text-2xl mb-4 text-[#A95C45] font-bold">{title}</h3>
               <p className="text-[#2A221E]/80 leading-relaxed mb-6">{description}</p>
-              <a href="#contacto" className="underline text-[#2A221E] hover:text-[#A95C45] transition-colors mt-auto">Leer mas.</a>
+              <a href="#contacto" className="underline text-[#2A221E] hover:text-[#A95C45] transition-colors mt-auto">Leer más.</a>
             </motion.div>
           ))}
         </div>
