@@ -13,19 +13,22 @@ const staggerContainer = {
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="relative min-h-screen pt-28 flex items-center bg-[#F8F5F0] overflow-hidden">
-      <div className="absolute top-0 right-0 w-full md:w-2/3 h-full z-0">
-        <img
-          src="https://images.unsplash.com/photo-1616594266964-c7a77e8c7c25?w=1920&q=80"
-          alt="Espacio de consulta cálido y acogedor"
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-[#F8F5F0]/20"></div>
-        <div className="absolute inset-0 bg-[#2A221E]/10 md:hidden"></div>
-      </div>
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex items-center">
+    <section
+      id="inicio"
+      className="relative min-h-screen pt-28 flex items-center overflow-hidden"
+      style={{ background: 'linear-gradient(110deg, #E8DDD0 0%, #EDE6DA 30%, #F2EDE5 60%, #F8F5F0 100%)' }}
+    >
+      {/* Mancha radial sutil detrás del árbol */}
+      <div
+        className="absolute right-0 top-0 w-2/3 h-full pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse at 70% 60%, #EBE4D8 0%, transparent 70%)' }}
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex items-center min-h-[calc(100vh-7rem)]">
+
+        {/* Texto sin cuadro duro */}
         <motion.div
-          className="bg-[#EBE4D8] p-10 md:p-16 lg:p-20 max-w-2xl shadow-2xl relative z-10"
+          className="max-w-xl py-16 relative z-10"
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
@@ -33,10 +36,10 @@ export default function HeroSection() {
           <motion.h1 variants={fadeInUp} className="font-serif text-5xl md:text-6xl text-[#2A221E] font-bold leading-tight mb-6">
             Porque mereces construir una vida que te haga feliz.
           </motion.h1>
-          <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#2A221E]/80 mb-6 font-light">
+          <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#2A221E]/75 mb-6 font-light">
             Comencemos a construir esa vida hoy mismo.
           </motion.p>
-          <motion.p variants={fadeInUp} className="text-base text-[#2A221E]/70 mb-10 leading-relaxed max-w-lg">
+          <motion.p variants={fadeInUp} className="text-base text-[#2A221E]/60 mb-10 leading-relaxed max-w-lg">
             Te ofrezco un espacio seguro y sin juicios, respaldado por conocimientos clínicos constantemente actualizados. Mi objetivo es que encuentres alivio, te comprendas mejor y desarrolles herramientas para una vida plena.
           </motion.p>
           <motion.div variants={fadeInUp}>
@@ -46,20 +49,22 @@ export default function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Árbol decorativo a la derecha del cuadro */}
+        {/* Árbol con blend multiply para fondo continuo */}
         <motion.div
-          className="hidden md:flex flex-1 justify-center items-end self-end pb-0"
+          className="hidden md:flex flex-1 justify-center items-end self-end"
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
         >
           <img
             src={arbol}
             alt=""
             aria-hidden="true"
-            className="w-[420px] lg:w-[500px] xl:w-[560px] object-contain drop-shadow-lg select-none"
+            className="w-[400px] lg:w-[480px] xl:w-[540px] object-contain select-none"
+            style={{ mixBlendMode: 'multiply' }}
           />
         </motion.div>
+
       </div>
     </section>
   );
