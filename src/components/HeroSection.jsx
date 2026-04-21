@@ -62,8 +62,9 @@ export default function HeroSection() {
             aria-hidden="true"
             className="w-[520px] lg:w-[620px] xl:w-[700px] object-contain select-none"
             style={{
-              maskImage: 'radial-gradient(ellipse 78% 85% at 50% 46%, black 50%, transparent 100%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 78% 85% at 50% 46%, black 50%, transparent 100%)',
+              mixBlendMode: 'multiply',
+              maskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
             }}
           />
         </motion.div>
