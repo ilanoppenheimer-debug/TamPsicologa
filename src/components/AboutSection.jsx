@@ -61,8 +61,16 @@ export default function AboutSection() {
           <img
             src={"data:image/png;base64," + fotoBase64}
             alt="Ps. Tamar Camhi V."
-            className="absolute inset-0 w-full h-full object-cover shadow-lg"
+            className="absolute inset-0 w-full h-full object-cover"
           />
+          <div className="absolute inset-0" style={{
+            background: `
+              linear-gradient(to right, #F8F5F0 0%, transparent 22%),
+              linear-gradient(to left, #F8F5F0 0%, transparent 10%),
+              linear-gradient(to bottom, #F8F5F0 0%, transparent 18%),
+              linear-gradient(to top, #F8F5F0 0%, transparent 25%)
+            `
+          }} />
         </motion.div>
       </div>
 
