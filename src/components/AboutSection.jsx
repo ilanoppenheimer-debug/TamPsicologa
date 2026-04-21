@@ -66,9 +66,9 @@ export default function AboutSection() {
           <div className="absolute inset-0" style={{
             background: `
               linear-gradient(to right, #F8F5F0 0%, transparent 22%),
-              linear-gradient(to left, #F8F5F0 0%, transparent 10%),
-              linear-gradient(to bottom, #F8F5F0 0%, transparent 18%),
-              linear-gradient(to top, #F8F5F0 0%, transparent 25%)
+              linear-gradient(to left, #F8F5F0 0%, transparent 22%),
+              linear-gradient(to bottom, #F8F5F0 0%, transparent 22%),
+              linear-gradient(to top, #F8F5F0 0%, transparent 22%)
             `
           }} />
         </motion.div>
