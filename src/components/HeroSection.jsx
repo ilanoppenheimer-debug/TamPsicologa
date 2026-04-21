@@ -60,10 +60,10 @@ export default function HeroSection() {
             src={arbol}
             alt=""
             aria-hidden="true"
-            className="w-[400px] lg:w-[480px] xl:w-[540px] object-contain select-none"
+            className="w-[520px] lg:w-[620px] xl:w-[700px] object-contain select-none"
             style={{
-              maskImage: 'radial-gradient(ellipse 80% 88% at 52% 48%, black 35%, transparent 100%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 80% 88% at 52% 48%, black 35%, transparent 100%)',
+              maskImage: 'radial-gradient(ellipse 78% 85% at 50% 46%, black 50%, transparent 100%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 78% 85% at 50% 46%, black 50%, transparent 100%)',
             }}
           />
         </motion.div>
