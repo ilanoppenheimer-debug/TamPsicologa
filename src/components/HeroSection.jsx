@@ -30,7 +30,7 @@ export default function HeroSection() {
           src={arbol}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full select-none opacity-[0.15]"
+          className="absolute inset-0 w-full h-full select-none opacity-[0.08]"
           style={{ objectFit: 'cover', objectPosition: 'center', mixBlendMode: 'multiply' }}
         />
       </div>
@@ -50,7 +50,7 @@ export default function HeroSection() {
           <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#2A221E] mb-6 font-light">
             Comencemos a construir esa vida hoy mismo.
           </motion.p>
-          <motion.p variants={fadeInUp} className="text-base text-[#2A221E]/80 mb-10 leading-relaxed max-w-lg">
+          <motion.p variants={fadeInUp} className="text-base text-[#2A221E] mb-10 leading-relaxed max-w-lg">
             Te ofrezco un espacio seguro y sin juicios, respaldado por conocimientos clínicos constantemente actualizados. Mi objetivo es que encuentres alivio, te comprendas mejor y desarrolles herramientas para una vida plena.
           </motion.p>
           <motion.div variants={fadeInUp}>
