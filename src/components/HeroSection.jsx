@@ -24,27 +24,7 @@ export default function HeroSection() {
         style={{ background: 'radial-gradient(ellipse at 70% 60%, #EBE4D8 0%, transparent 70%)' }}
       />
 
-      {/* Árbol móvil */}
-      <motion.div
-        className="absolute right-[-30px] bottom-0 w-[260px] md:hidden pointer-events-none z-0"
-        initial={{ opacity: 0, x: 40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-      >
-        <img
-          src={arbol}
-          alt=""
-          aria-hidden="true"
-          className="w-full object-contain select-none"
-          style={{
-            mixBlendMode: 'multiply',
-            maskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
-            WebkitMaskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
-          }}
-        />
-      </motion.div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex items-center min-h-[calc(100vh-7rem)]">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center min-h-[calc(100vh-7rem)]">
 
         {/* Texto sin cuadro duro */}
         <motion.div
@@ -71,7 +51,7 @@ export default function HeroSection() {
 
         {/* Árbol con blend multiply para fondo continuo */}
         <motion.div
-          className="hidden md:flex flex-1 justify-center items-end self-end"
+          className="flex justify-center items-end w-full md:flex-1 md:self-end"
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
@@ -80,7 +60,7 @@ export default function HeroSection() {
             src={arbol}
             alt=""
             aria-hidden="true"
-            className="w-[520px] lg:w-[620px] xl:w-[700px] object-contain select-none"
+            className="w-[200px] md:w-[520px] lg:w-[620px] xl:w-[700px] object-contain select-none"
             style={{
               mixBlendMode: 'multiply',
               maskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
