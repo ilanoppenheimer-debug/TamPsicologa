@@ -25,17 +25,15 @@ export default function HeroSection() {
       />
 
       {/* Árbol móvil de fondo — cubre toda la sección */}
-      <div
-        className="absolute inset-0 md:hidden pointer-events-none z-0"
-        style={{
-          backgroundImage: `url(${arbol})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          opacity: 0.12,
-          mixBlendMode: 'multiply',
-        }}
-      />
+      <div className="absolute inset-0 md:hidden pointer-events-none z-0 overflow-hidden">
+        <img
+          src={arbol}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full select-none opacity-[0.15]"
+          style={{ objectFit: 'cover', objectPosition: 'center', mixBlendMode: 'multiply' }}
+        />
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex items-center min-h-[calc(100vh-7rem)]">
 
