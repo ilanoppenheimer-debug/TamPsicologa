@@ -30,7 +30,7 @@ export default function HeroSection() {
           src={arbol}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full select-none opacity-[0.15]"
+          className="absolute inset-0 w-full h-full select-none opacity-[0.08]"
           style={{ objectFit: 'cover', objectPosition: 'center', mixBlendMode: 'multiply' }}
         />
       </div>
@@ -47,10 +47,10 @@ export default function HeroSection() {
           <motion.h1 variants={fadeInUp} className="font-serif text-5xl md:text-6xl text-[#2A221E] font-bold leading-tight mb-6">
             Porque mereces construir una vida que te haga feliz.
           </motion.h1>
-          <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#2A221E]/75 mb-6 font-light">
+          <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#2A221E] mb-6 font-light">
             Comencemos a construir esa vida hoy mismo.
           </motion.p>
-          <motion.p variants={fadeInUp} className="text-base text-[#2A221E]/60 mb-10 leading-relaxed max-w-lg">
+          <motion.p variants={fadeInUp} className="text-base text-[#2A221E] mb-10 leading-relaxed max-w-lg">
             Te ofrezco un espacio seguro y sin juicios, respaldado por conocimientos clínicos constantemente actualizados. Mi objetivo es que encuentres alivio, te comprendas mejor y desarrolles herramientas para una vida plena.
           </motion.p>
           <motion.div variants={fadeInUp}>
@@ -74,8 +74,8 @@ export default function HeroSection() {
             className="w-[520px] lg:w-[620px] xl:w-[700px] object-contain select-none"
             style={{
               mixBlendMode: 'multiply',
-              maskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
+              maskImage: 'radial-gradient(ellipse 80% 88% at 50% 48%, black 0%, black 30%, transparent 90%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 80% 88% at 50% 48%, black 0%, black 30%, transparent 90%)',
             }}
           />
         </motion.div>
