@@ -54,8 +54,7 @@ export default function SpecialtiesSection() {
             >
               <div className="mb-6 text-[#2A221E]"><Icon size={80} strokeWidth={1} /></div>
               <h3 className="font-serif text-2xl mb-4 text-[#A95C45] font-bold">{title}</h3>
-              <p className="text-[#2A221E]/80 leading-relaxed mb-6">{description}</p>
-              <a href="#contacto" className="underline text-[#2A221E] hover:text-[#A95C45] transition-colors mt-auto">Leer más.</a>
+              <p className="text-[#2A221E]/80 leading-relaxed">{description}</p>
             </motion.div>
           ))}
         </div>
