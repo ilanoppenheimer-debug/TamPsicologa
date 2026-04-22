@@ -24,25 +24,16 @@ export default function HeroSection() {
         style={{ background: 'radial-gradient(ellipse at 70% 60%, #EBE4D8 0%, transparent 70%)' }}
       />
 
-      {/* Árbol móvil */}
-      <motion.div
-        className="absolute right-[-30px] bottom-0 w-[260px] md:hidden pointer-events-none z-0"
-        initial={{ opacity: 0, x: 40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-      >
+      {/* Árbol móvil de fondo — cubre toda la sección */}
+      <div className="absolute inset-0 md:hidden pointer-events-none z-0 overflow-hidden">
         <img
           src={arbol}
           alt=""
           aria-hidden="true"
-          className="w-full object-contain select-none"
-          style={{
-            mixBlendMode: 'multiply',
-            maskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
-            WebkitMaskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
-          }}
+          className="absolute inset-0 w-full h-full select-none opacity-[0.15]"
+          style={{ objectFit: 'cover', objectPosition: 'center', mixBlendMode: 'multiply' }}
         />
-      </motion.div>
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex items-center min-h-[calc(100vh-7rem)]">
 
