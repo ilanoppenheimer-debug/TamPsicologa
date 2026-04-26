@@ -18,7 +18,7 @@ export default function Navbar() {
           <span className="font-serif text-2xl font-bold tracking-wide">
             Tamar Camhi Vainroj
           </span>
-          <span className="text-sm text-[#F8F5F0]/70 font-light hidden md:block">
+          <span className="text-xs md:text-sm text-[#F8F5F0]/70 font-light">
             Psicóloga Clínica niños, adolescentes y adultos.
           </span>
         </div>

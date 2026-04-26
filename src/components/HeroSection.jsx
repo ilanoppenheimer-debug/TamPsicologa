@@ -24,6 +24,17 @@ export default function HeroSection() {
         style={{ background: 'radial-gradient(ellipse at 70% 60%, #EBE4D8 0%, transparent 70%)' }}
       />
 
+      {/* Árbol móvil de fondo — cubre toda la sección */}
+      <div className="absolute inset-0 md:hidden pointer-events-none z-0 overflow-hidden">
+        <img
+          src={arbol}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full select-none opacity-[0.08]"
+          style={{ objectFit: 'cover', objectPosition: 'center', mixBlendMode: 'multiply' }}
+        />
+      </div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex items-center min-h-[calc(100vh-7rem)]">
 
         {/* Texto sin cuadro duro */}
@@ -36,10 +47,10 @@ export default function HeroSection() {
           <motion.h1 variants={fadeInUp} className="font-serif text-5xl md:text-6xl text-[#2A221E] font-bold leading-tight mb-6">
             Porque mereces construir una vida que te haga feliz.
           </motion.h1>
-          <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#2A221E]/75 mb-6 font-light">
+          <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#2A221E] mb-6 font-light">
             Comencemos a construir esa vida hoy mismo.
           </motion.p>
-          <motion.p variants={fadeInUp} className="text-base text-[#2A221E]/60 mb-10 leading-relaxed max-w-lg">
+          <motion.p variants={fadeInUp} className="text-base text-[#2A221E] mb-10 leading-relaxed max-w-lg">
             Te ofrezco un espacio seguro y sin juicios, respaldado por conocimientos clínicos constantemente actualizados. Mi objetivo es que encuentres alivio, te comprendas mejor y desarrolles herramientas para una vida plena.
           </motion.p>
           <motion.div variants={fadeInUp}>
@@ -63,8 +74,8 @@ export default function HeroSection() {
             className="w-[520px] lg:w-[620px] xl:w-[700px] object-contain select-none"
             style={{
               mixBlendMode: 'multiply',
-              maskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 72% 80% at 50% 46%, black 30%, transparent 100%)',
+              maskImage: 'radial-gradient(ellipse 58% 62% at 50% 50%, black 0%, black 25%, transparent 80%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 58% 62% at 50% 50%, black 0%, black 25%, transparent 80%)',
             }}
           />
         </motion.div>
