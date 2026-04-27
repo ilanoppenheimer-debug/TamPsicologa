@@ -43,18 +43,18 @@ export default function SpecialtiesSection() {
         variants={staggerContainer}
       >
         <div className="text-center mb-16">
-          <h2 className="font-serif text-5xl text-[#6D3B07] mb-4 font-bold">Especialidades</h2>
+          <h2 className="font-serif text-5xl text-[#4A2805] mb-4 font-bold">Especialidades</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12">
           {specialties.map(({ icon: Icon, title, description, border }) => (
             <motion.div
               key={title}
               variants={fadeInUp}
-              className={`flex flex-col items-center text-center px-8 ${border ? 'md:border-r border-[#6D3B07]/20' : ''}`}
+              className={`flex flex-col items-center text-center px-8 ${border ? 'md:border-r border-[#4A2805]/20' : ''}`}
             >
-              <div className="mb-6 text-[#6D3B07]"><Icon size={80} strokeWidth={1} /></div>
+              <div className="mb-6 text-[#4A2805]"><Icon size={80} strokeWidth={1} /></div>
               <h3 className="font-serif text-2xl mb-4 text-[#A95C45] font-bold">{title}</h3>
-              <p className="text-[#6D3B07]/80 leading-relaxed">{description}</p>
+              <p className="text-[#4A2805]/80 leading-relaxed">{description}</p>
             </motion.div>
           ))}
         </div>

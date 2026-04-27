@@ -13,10 +13,10 @@ export default function ContactSection() {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-serif text-5xl md:text-6xl text-[#6D3B07] font-bold mb-4">
+          <h2 className="font-serif text-5xl md:text-6xl text-[#4A2805] font-bold mb-4">
             ¿Conversemos?
           </h2>
-          <p className="text-[#6D3B07]/70 text-base mb-12 leading-relaxed max-w-sm">
+          <p className="text-[#4A2805]/70 text-base mb-12 leading-relaxed max-w-sm">
             Estoy aquí para escucharte. Escríbeme o contáctame directamente y damos juntos el primer paso.
           </p>
 
@@ -24,8 +24,8 @@ export default function ContactSection() {
             <li className="flex items-start gap-4">
               <div className="mt-1 text-[#A95C45] shrink-0"><MapPin size={22} /></div>
               <div>
-                <p className="font-semibold text-[#6D3B07] mb-1">Consulta presencial</p>
-                <p className="text-[#6D3B07]/70 text-sm leading-relaxed">
+                <p className="font-semibold text-[#4A2805] mb-1">Consulta presencial</p>
+                <p className="text-[#4A2805]/70 text-sm leading-relaxed">
                   La Dehesa (Lo Barnechea) y Las Condes<br />
                   También atiendo online para todo Chile
                 </p>
@@ -35,7 +35,7 @@ export default function ContactSection() {
               <a href="tel:+56950194693" className="flex items-center gap-4 group">
                 <div className="text-[#A95C45] shrink-0"><Phone size={22} /></div>
                 <div>
-                  <p className="font-semibold text-[#6D3B07] group-hover:text-[#A95C45] transition-colors">+56 9 5019 4693</p>
+                  <p className="font-semibold text-[#4A2805] group-hover:text-[#A95C45] transition-colors">+56 9 5019 4693</p>
                 </div>
               </a>
             </li>
@@ -43,7 +43,7 @@ export default function ContactSection() {
               <a href="mailto:ps.tamarcamhi@gmail.com" className="flex items-center gap-4 group">
                 <div className="text-[#A95C45] shrink-0"><Mail size={22} /></div>
                 <div>
-                  <p className="font-semibold text-[#6D3B07] group-hover:text-[#A95C45] transition-colors">ps.tamarcamhi@gmail.com</p>
+                  <p className="font-semibold text-[#4A2805] group-hover:text-[#A95C45] transition-colors">ps.tamarcamhi@gmail.com</p>
                 </div>
               </a>
             </li>
@@ -51,7 +51,7 @@ export default function ContactSection() {
               <a href="https://wa.me/56950194693" target="_blank" rel="noreferrer" className="flex items-center gap-4 group">
                 <div className="text-[#A95C45] shrink-0"><MessageCircle size={22} /></div>
                 <div>
-                  <p className="font-semibold text-[#6D3B07] group-hover:text-[#A95C45] transition-colors underline">
+                  <p className="font-semibold text-[#4A2805] group-hover:text-[#A95C45] transition-colors underline">
                     Hablemos por WhatsApp
                   </p>
                 </div>
@@ -68,7 +68,7 @@ export default function ContactSection() {
           transition={{ duration: 0.8 }}
           className="bg-[#F8F5F0] p-8 md:p-10 shadow-sm"
         >
-          <h3 className="font-serif text-2xl text-[#6D3B07] font-bold mb-8">Envíame un mensaje</h3>
+          <h3 className="font-serif text-2xl text-[#4A2805] font-bold mb-8">Envíame un mensaje</h3>
           <form
             action="mailto:ps.tamarcamhi@gmail.com"
             method="GET"
@@ -77,68 +77,68 @@ export default function ContactSection() {
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="flex flex-col">
-                <label className="text-xs font-semibold text-[#6D3B07]/60 uppercase tracking-widest mb-2">
+                <label className="text-xs font-semibold text-[#4A2805]/60 uppercase tracking-widest mb-2">
                   Nombre <span className="text-[#A95C45]">*</span>
                 </label>
                 <input
                   type="text"
                   name="Nombre"
                   required
-                  className="border-b border-[#6D3B07]/30 bg-transparent py-2 text-[#6D3B07] placeholder-[#6D3B07]/30 focus:outline-none focus:border-[#A95C45] transition-colors"
+                  className="border-b border-[#4A2805]/30 bg-transparent py-2 text-[#4A2805] placeholder-[#4A2805]/30 focus:outline-none focus:border-[#A95C45] transition-colors"
                   placeholder="Tu nombre"
                 />
               </div>
               <div className="flex flex-col">
-                <label className="text-xs font-semibold text-[#6D3B07]/60 uppercase tracking-widest mb-2">
+                <label className="text-xs font-semibold text-[#4A2805]/60 uppercase tracking-widest mb-2">
                   Apellido <span className="text-[#A95C45]">*</span>
                 </label>
                 <input
                   type="text"
                   name="Apellido"
                   required
-                  className="border-b border-[#6D3B07]/30 bg-transparent py-2 text-[#6D3B07] placeholder-[#6D3B07]/30 focus:outline-none focus:border-[#A95C45] transition-colors"
+                  className="border-b border-[#4A2805]/30 bg-transparent py-2 text-[#4A2805] placeholder-[#4A2805]/30 focus:outline-none focus:border-[#A95C45] transition-colors"
                   placeholder="Tu apellido"
                 />
               </div>
             </div>
             <div className="flex flex-col">
-              <label className="text-xs font-semibold text-[#6D3B07]/60 uppercase tracking-widest mb-2">
+              <label className="text-xs font-semibold text-[#4A2805]/60 uppercase tracking-widest mb-2">
                 Email <span className="text-[#A95C45]">*</span>
               </label>
               <input
                 type="email"
                 name="Email"
                 required
-                className="border-b border-[#6D3B07]/30 bg-transparent py-2 text-[#6D3B07] placeholder-[#6D3B07]/30 focus:outline-none focus:border-[#A95C45] transition-colors"
+                className="border-b border-[#4A2805]/30 bg-transparent py-2 text-[#4A2805] placeholder-[#4A2805]/30 focus:outline-none focus:border-[#A95C45] transition-colors"
                 placeholder="tu@email.com"
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-xs font-semibold text-[#6D3B07]/60 uppercase tracking-widest mb-2">
+              <label className="text-xs font-semibold text-[#4A2805]/60 uppercase tracking-widest mb-2">
                 Teléfono
               </label>
               <input
                 type="tel"
                 name="Telefono"
-                className="border-b border-[#6D3B07]/30 bg-transparent py-2 text-[#6D3B07] placeholder-[#6D3B07]/30 focus:outline-none focus:border-[#A95C45] transition-colors"
+                className="border-b border-[#4A2805]/30 bg-transparent py-2 text-[#4A2805] placeholder-[#4A2805]/30 focus:outline-none focus:border-[#A95C45] transition-colors"
                 placeholder="+56 9 XXXX XXXX"
               />
             </div>
             <div className="flex flex-col">
-              <label className="text-xs font-semibold text-[#6D3B07]/60 uppercase tracking-widest mb-2">
+              <label className="text-xs font-semibold text-[#4A2805]/60 uppercase tracking-widest mb-2">
                 Mensaje
               </label>
               <textarea
                 name="Mensaje"
                 rows={4}
-                className="border-b border-[#6D3B07]/30 bg-transparent py-2 text-[#6D3B07] placeholder-[#6D3B07]/30 focus:outline-none focus:border-[#A95C45] transition-colors resize-none"
+                className="border-b border-[#4A2805]/30 bg-transparent py-2 text-[#4A2805] placeholder-[#4A2805]/30 focus:outline-none focus:border-[#A95C45] transition-colors resize-none"
                 placeholder="Cuéntame en qué puedo ayudarte..."
               />
             </div>
             <div className="flex justify-end pt-2">
               <button
                 type="submit"
-                className="bg-[#6D3B07] text-[#F8F5F0] px-10 py-3 font-semibold hover:bg-[#A95C45] transition-colors duration-300"
+                className="bg-[#4A2805] text-[#F8F5F0] px-10 py-3 font-semibold hover:bg-[#A95C45] transition-colors duration-300"
               >
                 Enviar consulta
               </button>

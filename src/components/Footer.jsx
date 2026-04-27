@@ -2,7 +2,7 @@ import { Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#6D3B07] text-[#F8F5F0] py-14 px-6">
+    <footer className="bg-[#4A2805] text-[#F8F5F0] py-14 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
         <div>
           <h2 className="font-serif text-2xl font-bold mb-1">Tamar Camhi V.</h2>

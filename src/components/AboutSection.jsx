@@ -21,22 +21,22 @@ export default function AboutSection() {
           transition={{ duration: 0.8 }}
           className="order-2 md:order-1"
         >
-          <h2 className="font-serif text-5xl md:text-6xl mb-4 text-[#6D3B07] font-bold">
+          <h2 className="font-serif text-5xl md:text-6xl mb-4 text-[#4A2805] font-bold">
             ¿Quién soy?
           </h2>
           <h3 className="font-serif text-2xl md:text-3xl mb-6 text-[#A95C45] font-semibold">
             Tamar Camhi V.
           </h3>
-          <p className="text-lg font-bold text-[#6D3B07] mb-6">
+          <p className="text-lg font-bold text-[#4A2805] mb-6">
             Psicóloga Clínica UC especializada en Terapia Conductual Dialéctica (DBT).
           </p>
-          <p className="text-base mb-6 leading-relaxed text-[#6D3B07]/80">
+          <p className="text-base mb-6 leading-relaxed text-[#4A2805]/80">
             Entiendo que iniciar terapia puede ser un desafío. Por lo mismo, creo que es importante encontrar un profesional que te haga sentir seguro, protegido y validado mientras te guía a través del proceso.
           </p>
-          <p className="text-base mb-10 leading-relaxed text-[#6D3B07]/80">
+          <p className="text-base mb-10 leading-relaxed text-[#4A2805]/80">
             Es por esto que mi propósito es apoyar y promover un cambio que te permita formar relaciones saludables, regular tus emociones de manera efectiva y fomentar un bienestar general, utilizando herramientas basadas en evidencia.
           </p>
-          <p className="text-sm text-[#6D3B07]/50 mb-8">
+          <p className="text-sm text-[#4A2805]/50 mb-8">
             Registro Nacional de Prestadores de Salud N° 895940
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
@@ -45,7 +45,7 @@ export default function AboutSection() {
             </a>
             <button
               onClick={() => setModalAbierto(true)}
-              className="underline text-[#6D3B07] hover:text-[#A95C45] transition-colors"
+              className="underline text-[#4A2805] hover:text-[#A95C45] transition-colors"
             >
               Más acerca de mí
             </button>
@@ -83,7 +83,7 @@ export default function AboutSection() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <div className="absolute inset-0 bg-[#6D3B07]/60 backdrop-blur-sm" onClick={() => setModalAbierto(false)} />
+            <div className="absolute inset-0 bg-[#4A2805]/60 backdrop-blur-sm" onClick={() => setModalAbierto(false)} />
             <motion.div
               className="relative bg-[#F8F5F0] p-10 max-w-lg w-full shadow-2xl"
               initial={{ opacity: 0, y: 30 }}
@@ -93,17 +93,17 @@ export default function AboutSection() {
             >
               <button
                 onClick={() => setModalAbierto(false)}
-                className="absolute top-4 right-4 text-[#6D3B07]/50 hover:text-[#A95C45] transition-colors"
+                className="absolute top-4 right-4 text-[#4A2805]/50 hover:text-[#A95C45] transition-colors"
                 aria-label="Cerrar"
               >
                 <X size={22} />
               </button>
-              <h3 className="font-serif text-2xl text-[#6D3B07] font-bold mb-6">Formación académica</h3>
+              <h3 className="font-serif text-2xl text-[#4A2805] font-bold mb-6">Formación académica</h3>
               <ul className="space-y-4">
                 {credenciales.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="mt-2 w-2 h-2 rounded-full bg-[#A95C45] shrink-0" />
-                    <p className="text-[#6D3B07]/80 text-base leading-relaxed">{item}</p>
+                    <p className="text-[#4A2805]/80 text-base leading-relaxed">{item}</p>
                   </li>
                 ))}
               </ul>

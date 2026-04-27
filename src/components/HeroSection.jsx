@@ -44,13 +44,13 @@ export default function HeroSection() {
           animate="visible"
           variants={staggerContainer}
         >
-          <motion.h1 variants={fadeInUp} className="font-serif text-5xl md:text-6xl text-[#6D3B07] font-bold leading-tight mb-6">
+          <motion.h1 variants={fadeInUp} className="font-serif text-5xl md:text-6xl text-[#4A2805] font-bold leading-tight mb-6">
             Porque mereces construir una vida que te haga feliz.
           </motion.h1>
-          <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#6D3B07] mb-6 font-light">
+          <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#4A2805] mb-6 font-light">
             Comencemos a construir esa vida hoy mismo.
           </motion.p>
-          <motion.p variants={fadeInUp} className="text-base text-[#6D3B07] mb-10 leading-relaxed max-w-lg">
+          <motion.p variants={fadeInUp} className="text-base text-[#4A2805] mb-10 leading-relaxed max-w-lg">
             Te ofrezco un espacio seguro y sin juicios, respaldado por conocimientos clínicos constantemente actualizados. Mi objetivo es que encuentres alivio, te comprendas mejor y desarrolles herramientas para una vida plena.
           </motion.p>
           <motion.div variants={fadeInUp}>
