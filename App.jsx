@@ -26,11 +26,11 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F8F5F0] text-[#2A221E] font-sans selection:bg-[#A95C45] selection:text-[#F8F5F0]">
+    <div className="min-h-screen bg-[#F8F5F0] text-[#6D3B07] font-sans selection:bg-[#A95C45] selection:text-[#F8F5F0]">
 
       <style dangerouslySetInnerHTML={{ __html: CSS_STYLES }} />
 
-      <nav className="fixed w-full top-0 z-50 bg-[#2A221E] text-[#F8F5F0] shadow-md">
+      <nav className="fixed w-full top-0 z-50 bg-[#6D3B07] text-[#F8F5F0] shadow-md">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex flex-col">
             <span className="font-serif text-2xl font-bold tracking-wide">
@@ -44,7 +44,7 @@ export default function App() {
             {navLinks.map(l => (
               <a key={l.href} href={l.href} className="hover:text-[#A95C45] transition-colors">{l.label}</a>
             ))}
-            <a href="#contacto" className="ml-2 bg-[#EBE4D8] text-[#2A221E] px-6 py-2 rounded-full font-semibold hover:bg-white transition-colors duration-300">
+            <a href="#contacto" className="ml-2 bg-[#EBE4D8] text-[#6D3B07] px-6 py-2 rounded-full font-semibold hover:bg-white transition-colors duration-300">
               Reservar hora
             </a>
           </div>
@@ -58,7 +58,7 @@ export default function App() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-[#1C1613] overflow-hidden"
+              className="md:hidden bg-[#6D3B07] overflow-hidden"
             >
               <div className="px-6 py-4 flex flex-col gap-4">
                 {navLinks.map(l => (
@@ -67,7 +67,7 @@ export default function App() {
                     onClick={() => setMenuOpen(false)}>{l.label}</a>
                 ))}
                 <a href="#contacto"
-                  className="mt-2 bg-[#EBE4D8] text-[#2A221E] px-6 py-3 text-center font-semibold rounded-full hover:bg-white transition-colors"
+                  className="mt-2 bg-[#EBE4D8] text-[#6D3B07] px-6 py-3 text-center font-semibold rounded-full hover:bg-white transition-colors"
                   onClick={() => setMenuOpen(false)}>
                   Reservar hora
                 </a>
@@ -84,7 +84,7 @@ export default function App() {
             alt="Ps. Tamar Camhi V."
             className="w-full h-full object-cover object-top"
           />
-          <div className="absolute inset-0 bg-[#2A221E]/10 md:hidden"></div>
+          <div className="absolute inset-0 bg-[#6D3B07]/10 md:hidden"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <motion.div
@@ -93,17 +93,17 @@ export default function App() {
             animate="visible"
             variants={staggerContainer}
           >
-            <motion.h1 variants={fadeInUp} className="font-serif text-5xl md:text-6xl text-[#2A221E] font-bold leading-tight mb-6">
+            <motion.h1 variants={fadeInUp} className="font-serif text-5xl md:text-6xl text-[#6D3B07] font-bold leading-tight mb-6">
               Porque mereces construir una vida que te haga feliz.
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#2A221E]/80 mb-6 font-light">
+            <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#6D3B07]/80 mb-6 font-light">
               Demos juntos el primer paso.
             </motion.p>
-            <motion.p variants={fadeInUp} className="text-base text-[#2A221E]/70 mb-10 leading-relaxed max-w-lg">
+            <motion.p variants={fadeInUp} className="text-base text-[#6D3B07]/70 mb-10 leading-relaxed max-w-lg">
               Te ofrezco un espacio seguro y sin juicios, respaldado por conocimientos clinicos constantemente actualizados. Mi objetivo es que encuentres alivio, te comprendas mejor y desarrolles herramientas practicas para tu dia a dia.
             </motion.p>
             <motion.div variants={fadeInUp}>
-              <a href="#contacto" className="inline-block bg-[#2A221E] text-[#F8F5F0] px-8 py-3 rounded-full font-medium hover:bg-[#A95C45] transition-colors duration-300 shadow-lg">
+              <a href="#contacto" className="inline-block bg-[#6D3B07] text-[#F8F5F0] px-8 py-3 rounded-full font-medium hover:bg-[#A95C45] transition-colors duration-300 shadow-lg">
                 Agenda una sesion
               </a>
             </motion.div>
@@ -120,26 +120,26 @@ export default function App() {
             transition={{ duration: 0.8 }}
             className="order-2 md:order-1"
           >
-            <h2 className="font-serif text-5xl md:text-6xl mb-4 text-[#1C1613] font-bold">
+            <h2 className="font-serif text-5xl md:text-6xl mb-4 text-[#6D3B07] font-bold">
               Quien soy?
             </h2>
             <h3 className="font-serif text-2xl md:text-3xl mb-6 text-[#A95C45] font-semibold">
               Tamar Camhi V.
             </h3>
-            <p className="text-lg font-bold text-[#2A221E] mb-6">
+            <p className="text-lg font-bold text-[#6D3B07] mb-6">
               Psicologa Clinica UC especializada en Terapia Conductual Dialectica (DBT).
             </p>
-            <p className="text-base mb-6 leading-relaxed text-[#2A221E]/80">
+            <p className="text-base mb-6 leading-relaxed text-[#6D3B07]/80">
               Entiendo que iniciar terapia puede ser un desafio. Por lo mismo, creo que es importante encontrar un profesional que te haga sentir seguro, protegido y validado mientras te guia a traves de tu proceso de transformacion.
             </p>
-            <p className="text-base mb-10 leading-relaxed text-[#2A221E]/80">
+            <p className="text-base mb-10 leading-relaxed text-[#6D3B07]/80">
               Es por esto que mi proposito es apoyar y promover un cambio que te permita formar relaciones saludables, regular tus emociones de manera efectiva y fomentar un bienestar general, utilizando herramientas concretas y basadas en la evidencia.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
               <a href="#contacto" className="bg-[#596C61] text-[#F8F5F0] px-8 py-3 font-medium hover:bg-[#46554C] transition-colors duration-300 shadow-sm">
                 Conversemos
               </a>
-              <a href="https://www.linkedin.com/in/tamarcamhi" target="_blank" rel="noreferrer" className="underline text-[#2A221E] hover:text-[#A95C45] transition-colors">
+              <a href="https://www.linkedin.com/in/tamarcamhi" target="_blank" rel="noreferrer" className="underline text-[#6D3B07] hover:text-[#A95C45] transition-colors">
                 Mas acerca de mi
               </a>
             </div>
@@ -169,32 +169,32 @@ export default function App() {
           variants={staggerContainer}
         >
           <div className="text-center mb-16">
-            <h2 className="font-serif text-5xl text-[#2A221E] mb-4 font-bold">Especialidades</h2>
+            <h2 className="font-serif text-5xl text-[#6D3B07] mb-4 font-bold">Especialidades</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-12">
-            <motion.div variants={fadeInUp} className="flex flex-col items-center text-center px-8 md:border-r border-[#2A221E]/20">
-              <div className="mb-6 text-[#2A221E]"><Brain size={80} strokeWidth={1} /></div>
+            <motion.div variants={fadeInUp} className="flex flex-col items-center text-center px-8 md:border-r border-[#6D3B07]/20">
+              <div className="mb-6 text-[#6D3B07]"><Brain size={80} strokeWidth={1} /></div>
               <h3 className="font-serif text-2xl mb-4 text-[#A95C45] font-bold">Regulacion Emocional</h3>
-              <p className="text-[#2A221E]/80 leading-relaxed mb-6">
+              <p className="text-[#6D3B07]/80 leading-relaxed mb-6">
                 Obtén herramientas practicas para tolerar el malestar, manejar emociones intensas como la ansiedad y la impulsividad, y aprender a confiar en las senales que tu mente y tu cuerpo te dan.
               </p>
-              <a href="#contacto" className="underline text-[#2A221E] hover:text-[#A95C45] transition-colors mt-auto">Leer mas.</a>
+              <a href="#contacto" className="underline text-[#6D3B07] hover:text-[#A95C45] transition-colors mt-auto">Leer mas.</a>
             </motion.div>
-            <motion.div variants={fadeInUp} className="flex flex-col items-center text-center px-8 md:border-r border-[#2A221E]/20">
-              <div className="mb-6 text-[#2A221E]"><Leaf size={80} strokeWidth={1} /></div>
+            <motion.div variants={fadeInUp} className="flex flex-col items-center text-center px-8 md:border-r border-[#6D3B07]/20">
+              <div className="mb-6 text-[#6D3B07]"><Leaf size={80} strokeWidth={1} /></div>
               <h3 className="font-serif text-2xl mb-4 text-[#A95C45] font-bold">Conducta Alimentaria</h3>
-              <p className="text-[#2A221E]/80 leading-relaxed mb-6">
+              <p className="text-[#6D3B07]/80 leading-relaxed mb-6">
                 Abordaje integral y libre de juicios de los Trastornos de la Conducta Alimentaria (TCA). Aprende a reconstruir sanamente la relacion con tu cuerpo, tu alimentacion y tu propia historia.
               </p>
-              <a href="#contacto" className="underline text-[#2A221E] hover:text-[#A95C45] transition-colors mt-auto">Leer mas.</a>
+              <a href="#contacto" className="underline text-[#6D3B07] hover:text-[#A95C45] transition-colors mt-auto">Leer mas.</a>
             </motion.div>
             <motion.div variants={fadeInUp} className="flex flex-col items-center text-center px-8">
-              <div className="mb-6 text-[#2A221E]"><HeartHandshake size={80} strokeWidth={1} /></div>
+              <div className="mb-6 text-[#6D3B07]"><HeartHandshake size={80} strokeWidth={1} /></div>
               <h3 className="font-serif text-2xl mb-4 text-[#A95C45] font-bold">Crisis y Vinculos</h3>
-              <p className="text-[#2A221E]/80 leading-relaxed mb-6">
+              <p className="text-[#6D3B07]/80 leading-relaxed mb-6">
                 Proporciono un entorno seguro que permite abordar traumas, atravesar procesos de duelo y etapas dificiles y desarrollar metodos de comunicacion efectivos para mejorar tus relaciones interpersonales y de pareja.
               </p>
-              <a href="#contacto" className="underline text-[#2A221E] hover:text-[#A95C45] transition-colors mt-auto">Leer mas.</a>
+              <a href="#contacto" className="underline text-[#6D3B07] hover:text-[#A95C45] transition-colors mt-auto">Leer mas.</a>
             </motion.div>
           </div>
         </motion.div>
@@ -202,8 +202,8 @@ export default function App() {
 
       <section className="w-full h-[450px] relative bg-[#EBE4D8]">
         <div className="absolute z-10 top-8 left-1/2 -translate-x-1/2 md:left-24 md:translate-x-0 bg-white p-6 shadow-xl w-[90%] md:w-auto max-w-sm">
-          <h3 className="font-serif text-xl font-bold text-[#2A221E] mb-2">Consulta Presencial</h3>
-          <p className="text-[#2A221E]/80 text-sm mb-4">
+          <h3 className="font-serif text-xl font-bold text-[#6D3B07] mb-2">Consulta Presencial</h3>
+          <p className="text-[#6D3B07]/80 text-sm mb-4">
             Atencion presencial en consultas ubicadas en <strong>La Dehesa</strong> (Lo Barnechea) y <strong>Las Condes</strong>. Tambien atiendo modalidad Online para todo el pais.
           </p>
           <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="text-[#A95C45] font-semibold text-sm hover:underline flex items-center gap-1">
@@ -223,7 +223,7 @@ export default function App() {
         ></iframe>
       </section>
 
-      <footer className="bg-[#1C1613] text-[#F8F5F0] py-20 px-6" id="contacto">
+      <footer className="bg-[#6D3B07] text-[#F8F5F0] py-20 px-6" id="contacto">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-1">
             <h2 className="font-serif text-3xl font-bold mb-2">Tamar Camhi V.</h2>

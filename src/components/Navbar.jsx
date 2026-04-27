@@ -12,7 +12,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-[#2A221E] text-[#F8F5F0] shadow-md">
+    <nav className="fixed w-full top-0 z-50 bg-[#6D3B07] text-[#F8F5F0] shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex flex-col">
           <span className="font-serif text-2xl font-bold tracking-wide">
@@ -26,7 +26,7 @@ export default function Navbar() {
           {navLinks.map(l => (
             <a key={l.href} href={l.href} className="hover:text-[#A95C45] transition-colors">{l.label}</a>
           ))}
-          <a href="https://wa.me/56950194693" target="_blank" rel="noreferrer" className="ml-2 bg-[#EBE4D8] text-[#2A221E] px-6 py-2 rounded-full font-semibold hover:bg-white transition-colors duration-300">
+          <a href="https://wa.me/56950194693" target="_blank" rel="noreferrer" className="ml-2 bg-[#EBE4D8] text-[#6D3B07] px-6 py-2 rounded-full font-semibold hover:bg-white transition-colors duration-300">
             Reservar hora
           </a>
         </div>
@@ -40,7 +40,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#1C1613] overflow-hidden"
+            className="md:hidden bg-[#6D3B07] overflow-hidden"
           >
             <div className="px-6 py-4 flex flex-col gap-4">
               {navLinks.map(l => (
@@ -49,7 +49,7 @@ export default function Navbar() {
                   onClick={() => setMenuOpen(false)}>{l.label}</a>
               ))}
               <a href="https://wa.me/56950194693" target="_blank" rel="noreferrer"
-                className="mt-2 bg-[#EBE4D8] text-[#2A221E] px-6 py-3 text-center font-semibold rounded-full hover:bg-white transition-colors"
+                className="mt-2 bg-[#EBE4D8] text-[#6D3B07] px-6 py-3 text-center font-semibold rounded-full hover:bg-white transition-colors"
                 onClick={() => setMenuOpen(false)}>
                 Reservar hora
               </a>

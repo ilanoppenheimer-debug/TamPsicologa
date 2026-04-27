@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#F8F5F0] text-[#2A221E] font-sans selection:bg-[#A95C45] selection:text-[#F8F5F0]">
+    <div className="min-h-screen bg-[#F8F5F0] text-[#6D3B07] font-sans selection:bg-[#A95C45] selection:text-[#F8F5F0]">
       <Navbar />
       <HeroSection />
       <AboutSection />
