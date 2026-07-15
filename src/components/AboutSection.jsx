@@ -67,7 +67,7 @@ export default function AboutSection() {
             background: `
               linear-gradient(to right, #F8F5F0 0%, transparent 22%),
               linear-gradient(to left, #F8F5F0 0%, transparent 22%),
-              linear-gradient(to bottom, #F8F5F0 0%, transparent 22%),
+              linear-gradient(to bottom, #F8F5F0 0%, transparent 9%),
               linear-gradient(to top, #F8F5F0 0%, transparent 22%)
             `
           }} />
