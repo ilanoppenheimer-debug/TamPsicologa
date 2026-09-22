@@ -59,7 +59,7 @@ export default function AboutSection() {
           className="order-1 md:order-2 h-full min-h-[500px] relative"
         >
           <img
-            src={"data:image/png;base64," + fotoBase64}
+            src={fotoBase64}
             alt="Ps. Tamar Camhi V."
             className="absolute inset-0 w-full h-full object-cover"
           />
