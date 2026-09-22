@@ -35,7 +35,7 @@ export default function ContactSection() {
               <a href="tel:+56969031485" className="flex items-center gap-4 group">
                 <div className="text-[#A95C45] shrink-0"><Phone size={22} /></div>
                 <div>
-                  <p className="font-semibold text-[#4A2805] group-hover:text-[#A95C45] transition-colors">+56 9 5019 4693</p>
+                  <p className="font-semibold text-[#4A2805] group-hover:text-[#A95C45] transition-colors">+56 9 6903 1485</p>
                 </div>
               </a>
             </li>
