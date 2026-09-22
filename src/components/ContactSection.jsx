@@ -32,7 +32,7 @@ export default function ContactSection() {
               </div>
             </li>
             <li>
-              <a href="tel:+56950194693" className="flex items-center gap-4 group">
+              <a href="tel:+56969031485" className="flex items-center gap-4 group">
                 <div className="text-[#A95C45] shrink-0"><Phone size={22} /></div>
                 <div>
                   <p className="font-semibold text-[#4A2805] group-hover:text-[#A95C45] transition-colors">+56 9 5019 4693</p>
@@ -48,7 +48,7 @@ export default function ContactSection() {
               </a>
             </li>
             <li>
-              <a href="https://wa.me/56950194693" target="_blank" rel="noreferrer" className="flex items-center gap-4 group">
+              <a href="https://wa.me/56969031485" target="_blank" rel="noreferrer" className="flex items-center gap-4 group">
                 <div className="text-[#A95C45] shrink-0"><MessageCircle size={22} /></div>
                 <div>
                   <p className="font-semibold text-[#4A2805] group-hover:text-[#A95C45] transition-colors underline">
