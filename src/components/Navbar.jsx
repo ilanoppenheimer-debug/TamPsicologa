@@ -26,7 +26,7 @@ export default function Navbar() {
           {navLinks.map(l => (
             <a key={l.href} href={l.href} className="hover:text-[#A95C45] transition-colors">{l.label}</a>
           ))}
-          <a href="https://wa.me/56950194693" target="_blank" rel="noreferrer" className="ml-2 bg-[#EBE4D8] text-[#4A2805] px-6 py-2 rounded-full font-semibold hover:bg-white transition-colors duration-300">
+          <a href="https://wa.me/56969031485" target="_blank" rel="noreferrer" className="ml-2 bg-[#EBE4D8] text-[#4A2805] px-6 py-2 rounded-full font-semibold hover:bg-white transition-colors duration-300">
             Reservar hora
           </a>
         </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
                   className="text-[#F8F5F0]/80 hover:text-[#A95C45] transition-colors text-lg font-light py-1 border-b border-white/10"
                   onClick={() => setMenuOpen(false)}>{l.label}</a>
               ))}
-              <a href="https://wa.me/56950194693" target="_blank" rel="noreferrer"
+              <a href="https://wa.me/56969031485" target="_blank" rel="noreferrer"
                 className="mt-2 bg-[#EBE4D8] text-[#4A2805] px-6 py-3 text-center font-semibold rounded-full hover:bg-white transition-colors"
                 onClick={() => setMenuOpen(false)}>
                 Reservar hora
